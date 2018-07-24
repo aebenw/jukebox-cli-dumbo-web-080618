@@ -57,14 +57,15 @@ def run
   until command == "exit" 
   puts "Please enter a command:"
   command = gets.chomp 
-  if command == "list"
-    list
-  elsif command == "play"
-  play 
-  elsif command == "help"
-  help 
-  elsif command == "exit"
-  exit_jukebox
+    if command == "list"
+      list
+    elsif command == "play"
+    play 
+    elsif command == "help"
+    help 
+    elsif command == "exit"
+    exit_jukebox
+    end
   end
 end
   
