@@ -54,7 +54,7 @@ end
 
 def run 
   help
-  until command == "exit" 
+  until command.downcase == "exit" 
   puts "Please enter a command:"
   command = gets.chomp 
     if command == "list"
