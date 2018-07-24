@@ -54,9 +54,9 @@ end
 
 def run(songs) 
   help
-  until command.downcase == "exit" 
   puts "Please enter a command:"
   command = gets.chomp 
+  until command.downcase == "exit" 
     if command.downcase == "list"
       list
     elsif command.downcase == "play"
