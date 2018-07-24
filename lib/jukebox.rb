@@ -57,13 +57,13 @@ def run
   until command.downcase == "exit" 
   puts "Please enter a command:"
   command = gets.chomp 
-    if command == "list"
+    if command.downcase == "list"
       list
-    elsif command == "play"
+    elsif command.downcase == "play"
     play 
-    elsif command == "help"
+    elsif command.downcase == "help"
     help 
-    elsif command == "exit"
+    elsif command.downcase == "exit"
     exit_jukebox
     end
   end
